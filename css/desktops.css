@@ -18,8 +18,11 @@
   color: var(--link-color-light);
 }
 
-/* Super solutions styles */
+.main {
+  gap: 9em;
+}
 
+/* Super solutions styles */
 .main__super-solution {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;

@@ -8,6 +8,11 @@
   font-size: 1rem;
 }
 
+/* Main styles */
+.main {
+  gap: 5.75em;
+}
+
 /* Super solution styles */
 .main__super-solution {
   grid-template-columns: repeat(2, 1fr);
