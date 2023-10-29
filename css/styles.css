@@ -51,3 +51,35 @@ footer {
   position: absolute;
   z-index: -10;
 }
+
+/* Request Beta Access styles */
+.content-layout__request-access {
+  display: inline-flex;
+  justify-content: center;
+  width: 64%;
+  max-width: 14.375em;
+  padding: 0.75em 1em;
+  border-radius: 0.375em;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.7;
+  text-transform: capitalize;
+}
+
+/* Header styles */
+.header {
+  margin-top: 1.5em;
+}
+
+.header__data-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__request-access {
+  border: 0.0625em solid var(--text-color-light);
+  color: var(--link-color-dark);
+}

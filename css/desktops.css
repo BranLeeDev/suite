@@ -1,0 +1,19 @@
+/* Header styles */
+.header {
+  margin-top: 3.125em;
+}
+
+.header__request-access {
+  background-image: linear-gradient(
+    var(--link-color-dark),
+    var(--link-color-dark)
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.header__request-access:hover {
+  background-size: 100% 100%;
+  color: var(--link-color-light);
+}
