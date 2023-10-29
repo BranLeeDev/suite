@@ -43,3 +43,11 @@ footer {
   min-height: 20em;
   height: max-content;
 }
+
+.content-layout__title {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -10;
+}
