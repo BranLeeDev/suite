@@ -1,0 +1,45 @@
+/* Global variables */
+:root {
+  --background-body: #faf8f6;
+  --background-footer: #f3ede7;
+  --background-just-works: #172339;
+  --title-color-dark: #faf8f6;
+  --text-color-dark: #f3ede7;
+  --link-color-dark: #172339;
+  --title-color-light: #49566d;
+  --text-color-light: #172339;
+  --link-color-light: #faf8f6;
+}
+
+/* Reset styles*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--background-body);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+.content-layout {
+  min-width: 20em;
+  width: 100%;
+  min-height: 20em;
+  height: max-content;
+}
