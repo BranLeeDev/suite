@@ -1,9 +1,39 @@
-.content-layout__request-access {
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-}
-
 /* Header styles */
 .header {
   margin-top: 2.5em;
+}
+
+.header__request-access {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Super solution styles */
+.main__super-solution {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  grid-template-areas:
+    "text img"
+    "stat stat";
+  align-items: center;
+}
+
+.super-solution__text-container {
+  width: 148%;
+  height: max-content;
+}
+
+.super-solution__description {
+  width: 70%;
+}
+
+.super-solution__image {
+  width: 83%;
+  object-position: bottom center;
+}
+
+.super-solution__stat-list {
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0;
 }
