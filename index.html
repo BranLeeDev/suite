@@ -28,106 +28,127 @@
     <link rel="stylesheet" href="/css/desktops.css" media="(width >= 90em)" />
   </head>
   <body>
-    <div>
-      <header>
-        <h1>suite</h1>
-        <img src="/public/images/svg/logo.svg" alt="Company logo" />
-        <a href="/">Request Beta Access</a>
+    <div class="content-layout">
+      <header class="header">
+        <h1 class="content-layout__title">suite</h1>
+        <img
+          class="content-layout__logo header__logo"
+          src="/public/images/svg/logo.svg"
+          alt="Company logo"
+        />
+        <a
+          class="content-layout__request-access header__request-access"
+          href="/"
+          >Request Beta Access</a
+        >
       </header>
-      <main>
-        <section>
-          <div>
-            <h2>
-              A <span>super solution</span> for your <span>business.</span>
+      <main class="main">
+        <section class="main__super-solution main__section">
+          <div class="super-solution__text-container">
+            <h2 class="super-solution__title">
+              A <span class="title__strong">super solution</span> for your
+              <span class="title__strong">business.</span>
             </h2>
-            <p>
+            <p class="super-solution__description">
               Our marketing and sales automations help you scale your outreach
               to get more leads for your company.
             </p>
-            <a href="/">Request Beta Access</a>
+            <a
+              class="content-layout__request-access super-solution__request-access"
+              href="/"
+              >Request Beta Access</a
+            >
           </div>
-          <picture>
+          <picture class="super-solution__picture">
             <source
+              class="picture__source"
               srcset="/public/images/png/image-hero-landscape@2x.png"
               media="(width >= 48em)"
               width="350"
               height="600"
             />
             <img
+              class="super-solution__image"
               src="/public/images/png/image-hero-portrait@2x.png"
               alt="Multicolored background image with a phone"
               width="343"
               height="240"
             />
           </picture>
-          <ul>
-            <li>
-              <article>
-                <h3>Companies</h3>
-                <p>2K+</p>
+          <ul class="super-solution__stat-list">
+            <li class="stat-list__item">
+              <article class="super-solution__company-stats">
+                <h3 class="company-stats__name">Companies</h3>
+                <p class="company-stats__counter">2K+</p>
               </article>
             </li>
-            <li>
-              <article>
-                <h3>Languages</h3>
-                <p>8</p>
+            <li class="stat-list__item">
+              <article class="super-solution__company-stats">
+                <h3 class="company-stats__name">Languages</h3>
+                <p class="company-stats__counter">8</p>
               </article>
             </li>
-            <li>
-              <article>
-                <h3>Leads</h3>
-                <p>1.2M</p>
+            <li class="stat-list__item">
+              <article class="super-solution__company-stats">
+                <h3 class="company-stats__name">Leads</h3>
+                <p class="company-stats__counter">1.2M</p>
               </article>
             </li>
           </ul>
         </section>
-        <section>
-          <picture>
+        <section class="main__section main__just-works">
+          <picture class="just-works__picture">
             <source
+              class="picture__source"
               srcset="/public/images/png/image-jeremy-large.png"
               media="(width >= 48em)"
               width="360"
               height="590"
             />
             <img
+              class="just-works__image"
               src="/public/images/png/image-jeremy-small@2x.png"
               alt="Man in an orange shirt, writing on his phone with a pencil"
               width="252"
               height="402"
             />
           </picture>
-          <div></div>
-          <div>
-            <h2>It just works.</h2>
-            <p>
+          <div class="just-works__curved-line"></div>
+          <div class="just-works__text-container">
+            <h2 class="just-works__title">It just works.</h2>
+            <p class="just-works__description">
               “I really like how it is an all-in-one solution that handle many
               of the tasks that you would normally need separate tools to do the
               same job. This thing is a miracle worker.”
             </p>
-            <article>
-              <h3>Jeremy Robinson</h3>
-              <p>CMO, FYLO</p>
+            <article class="just-works__chief">
+              <h3 class="chief__name">Jeremy Robinson</h3>
+              <p class="chief__role-company">CMO, FYLO</p>
             </article>
           </div>
         </section>
       </main>
-      <footer>
-        <img src="/public/images/svg/logo.svg" alt="Company logo" />
-        <p>Copyright - Suite</p>
-        <ul>
-          <li>
-            <a href="/" aria-label="Facebook icon">
-              <i class="bx bxl-facebook-square"></i>
+      <footer class="footer">
+        <img
+          class="content-layout__logo footer__logo"
+          src="/public/images/svg/logo.svg"
+          alt="Company logo"
+        />
+        <p class="footer__copyright">Copyright - Suite</p>
+        <ul class="footer__social-list">
+          <li class="social-list__item">
+            <a class="footer__link" href="/" aria-label="Facebook icon">
+              <i class="bx bxl-facebook-square link__icon"></i>
             </a>
           </li>
-          <li>
-            <a href="/" aria-label="Twitter icon">
-              <i class="bx bxl-twitter"></i>
+          <li class="social-list__item">
+            <a class="footer__link" href="/" aria-label="Twitter icon">
+              <i class="bx bxl-twitter link__icon"></i>
             </a>
           </li>
-          <li>
-            <a aria-label="Instagram icon" href="/">
-              <i class="bx bxl-instagram"></i>
+          <li class="social-list__item">
+            <a class="footer__link" aria-label="Instagram icon" href="/">
+              <i class="bx bxl-instagram link__icon"></i>
             </a>
           </li>
         </ul>
