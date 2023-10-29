@@ -1,0 +1,13 @@
+{
+  "name": "suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "SUITE",
+    "suite",
+    "Suite BEM"
+  ],
+  "author": "BranLeeDev",
+  "license": "MIT"
+}
