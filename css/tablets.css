@@ -42,3 +42,22 @@
   justify-content: space-around;
   gap: 0;
 }
+
+/* Just works styles */
+
+.main__just-works {
+  width: 90%;
+  padding-top: 24em;
+  margin-top: 18em;
+}
+
+.just-works__picture {
+  top: -16em;
+}
+
+.just-works__picture::after {
+  top: 17em;
+  left: calc(50% - 11.5em);
+  width: 23em;
+  height: 23em;
+}

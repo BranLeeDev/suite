@@ -93,11 +93,6 @@ footer {
   margin-top: 5em;
 }
 
-/* Section styles */
-.main__section {
-  width: 90%;
-}
-
 /* Super solution styles */
 .main__super-solution {
   display: grid;
@@ -107,6 +102,7 @@ footer {
     "img"
     "stat";
   row-gap: 3.5em;
+  width: 90%;
 }
 
 .super-solution__text-container {
@@ -195,4 +191,94 @@ footer {
 .company-stats__counter {
   font-size: 3rem;
   font-weight: 700;
+}
+
+/* Just works styles */
+.main__just-works {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  width: 100%;
+  padding-top: 18em;
+  padding-bottom: 4em;
+  margin-top: 11em;
+  border-radius: 0.9375em;
+  background-color: var(--background-just-works);
+}
+
+.just-works__picture {
+  position: absolute;
+  top: -11em;
+  display: inline-block;
+}
+
+.just-works__picture::after {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  top: 12em;
+  left: calc(50% - 8em);
+  display: inline-block;
+  width: 16em;
+  height: 16em;
+  border-radius: 50%;
+  background-image: url("/public/images/svg/pattern-blur.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.just-works__curved-line {
+  display: inline-flex;
+  width: 3.1em;
+  height: 2.5em;
+  background-image: url("/public/images/svg/pattern-curved-line-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.just-works__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  width: 83%;
+}
+
+.just-works__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--title-color-dark);
+}
+
+.just-works__description {
+  font-size: 1.125rem;
+  line-height: 1.78;
+  text-align: center;
+  color: var(--text-color-dark);
+}
+
+.just-works__chief {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chief__name {
+  font-size: 1.125rem;
+  line-height: 1.78;
+  text-transform: uppercase;
+  color: var(--title-color-dark);
+}
+
+.chief__role-company {
+  font-size: 1rem;
+  line-height: 1.63;
+  text-transform: uppercase;
+  color: var(--text-color-dark);
 }

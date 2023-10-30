@@ -63,3 +63,53 @@
 .super-solution__request-access:hover {
   background-size: 100% 100%;
 }
+
+/* Just works styles */
+
+.main__just-works {
+  display: grid;
+  grid-template-columns: 23em max-content minmax(min-content, max-content);
+  grid-template-areas: "img line text";
+  gap: 3em;
+  padding: 7em 7.9em;
+  margin-top: 8em;
+}
+
+.just-works__picture {
+  grid-area: img;
+  position: absolute;
+  top: auto;
+  bottom: -7.22em;
+}
+
+.just-works__picture::after {
+  top: 13em;
+  left: calc(50% - 14.5em);
+  width: 28em;
+  height: 28em;
+}
+
+.just-works__curved-line {
+  grid-area: line;
+  width: 5.5em;
+  height: 3.25em;
+}
+
+.just-works__text-container {
+  grid-area: text;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.just-works__title {
+  font-size: 3rem;
+}
+
+.just-works__description {
+  text-align: start;
+  font-size: 1.25rem;
+}
+
+.just-works__chief {
+  align-items: flex-start;
+}
