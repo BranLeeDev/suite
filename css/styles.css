@@ -42,6 +42,7 @@ footer {
   width: 100%;
   min-height: 20em;
   height: max-content;
+  overflow-x: hidden;
 }
 
 .content-layout__title {
@@ -165,6 +166,7 @@ footer {
 
 .super-solution__picture {
   grid-area: img;
+  z-index: -10;
 }
 
 .super-solution__stat-list {
@@ -315,4 +317,65 @@ footer {
 .footer__link {
   font-size: 1.5rem;
   color: var(--link-color-dark);
+}
+
+/* Animations */
+@media screen and (width < 48em) {
+  .header {
+    animation: right-side 0.2s ease-in-out forwards;
+  }
+
+  .super-solution__title {
+    animation: right-side 0.25s ease-in-out forwards;
+  }
+
+  .super-solution__description {
+    animation: right-side 0.3s ease-in-out forwards;
+  }
+
+  .super-solution__request-access {
+    animation: right-side 0.35s ease-in-out forwards;
+  }
+
+  .super-solution__title {
+    animation: right-side 0.25s ease-in-out forwards;
+  }
+}
+
+@media screen and (height >= 33.75em) and (width < 48em) {
+  .super-solution__picture {
+    animation: right-side 0.4s ease-in-out forwards;
+  }
+}
+
+@media screen and (height >= 48em) and (width < 48em) {
+  .super-solution__company-stats--companies {
+    animation: left-side 0.425s ease-in-out forwards;
+  }
+
+  .super-solution__company-stats--languages {
+    animation: right-side 0.45s ease-in-out forwards;
+  }
+
+  .super-solution__company-stats--leads {
+    animation: left-side 0.475s ease-in-out forwards;
+  }
+}
+
+@keyframes left-side {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes right-side {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

@@ -136,3 +136,21 @@
 .social-list__item:hover .footer__link {
   color: #979797;
 }
+
+/* Animations */
+.super-solution__picture {
+  animation-name: top-side;
+  animation-duration: 0.25s;
+}
+
+.super-solution__company-stats--companies {
+  animation: right-side 0.275s ease-in-out forwards;
+}
+
+.super-solution__company-stats--languages {
+  animation: right-side 0.3s ease-in-out forwards;
+}
+
+.super-solution__company-stats--leads {
+  animation: right-side 0.325s ease-in-out forwards;
+}
